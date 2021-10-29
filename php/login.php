@@ -67,9 +67,6 @@
 
                 </form>       
         </div>
-        <?php
-             include("validacion_login.php");
-            ?>
     </div>
 </div>
 </div>
