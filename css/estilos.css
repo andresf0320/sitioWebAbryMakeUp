@@ -16,7 +16,7 @@
     border: 1px solid #d37676;
 }
 .fondo{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.863);
 }
 .nombre{
     width: 400px;
