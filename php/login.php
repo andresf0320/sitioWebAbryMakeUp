@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,7 +28,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/1d1992211d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
         rel="stylesheet">
@@ -23,34 +46,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Patua+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/normalizacion.css">
+    <link rel="stylesheet" href= "../css/normalizacion.css">
+
     <title>Aybri Make Up</title>
 </head>
 <header>
     <div class="fondo" align="center">
-        <img src="img/nombre.jpeg" class="nombre">
+        <img src="../img/nombre.jpeg" class="nombre">
     </div>
 </header>
 <div class="navegador">
     <nav class="principal">
         <div class="menu">
-            | <a class="tex" href="index.html">INICIO</a> |
-            <a class="tex" href="conocenos.html">CONÓCENOS</a> |
-            <a class="tex" href="productos.html">PRODUCTOS</a> |
-            <a class="tex" href="contactenos.html">CONTÁCTENOS</a> |
+            | <a class="tex" href="../index.html">INICIO</a> |
+            <a class="tex" href="../conocenos.html">CONÓCENOS</a> |
+            <a class="tex" href="../productos.html">PRODUCTOS</a> |
+            <a class="tex" href="../contactenos.html">CONTÁCTENOS</a> |
         </div>
 
-        <div class="derecha">
-            <a href="../Sitio web AybriMakeUp/php/login.php">  <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" ><i class="fas fa-user-circle"></i></button></a>
-          </div>
-      </nav>
-  </div>
-  
+        
+</div>
 <!--
 <div class="modal" id="modal" tabindex="-1">
     <div class="contenedor" align="center">
         <div class="barra-cerrar">
             <button id="close" class="closes" onclick="cerrar()"><i class="far fa-times-circle"></i></button>
+        </div>
+-->
+<div class="contenedor" align="center">
+        <div class="barra-cerrar">
+            <button id="close" class="closes" onclick="cerrar()"></button>
         </div>
             <h4 class="conct">Iniciar Sesión</h4>
                 <label for="usuario" class="txt"><strong>Usuario: </strong></label>
@@ -62,41 +87,3 @@
         </div>
     </div>
 </div>
--->
-<body class="body">
-
-    AGREGAR PRODUCTOS
-
-    <flooter>
-        <div class="flooter">
-            <section class="row contenido">
-                <div class="col-sm" align="center">
-                    <h3 class="Social">Información</h3>
-                    <div>
-                        <p class="info"><i class="fas fa-map-marker"></i> Calle 25 # 4-79 San Mateo | <i
-                                class="fas fa-globe-americas"></i> Cúcuta, Colombia </p>
-                        <p class="info"><i class="fas fa-envelope info"></i> aybrimakeup@gmail.com | <i
-                                class="fas fa-phone info"></i> +57 3229333001 </p>
-                    </div>
-                </div>
-
-                <div class="col-sm" align="center">
-                    <h3 class="Social">Redes Sociales</h3>
-                    <a href="https://wa.link/wvqp2q" target="_blank"><button class="redes"><i
-                                class="fab fa-whatsapp"></i></button></a>
-                    <a href="https://instagram.com/aybrimakeup?utm_medium=copy_link" target="_blank"><button
-                            class="redes"><i class="fab fa-instagram"></i></button></a>
-                    <a href="mailto:aybrimakeup@gmail.com?subject=Solicitar asesoría&body=Cordial saludo,solicito asesoría referente a unos productos y/o guia de envio."
-                        target="_blank"><button class="redes"><i class="far fa-envelope"></i></button></a>
-
-
-
-
-                </div>
-            </section>
-        </div>
-    </flooter>
-    
-</body>
-
-</html>
