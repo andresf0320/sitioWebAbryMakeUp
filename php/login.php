@@ -62,14 +62,16 @@
                 <input type="text" name="usuario" id="usuario" class="txt" placeholder="Ingrese usuario"><br><br>
                 <label for="contraseña" class="txt"><strong> Contraseña: </strong></label>
                 <input type="password" name="contraseña" id="contraseña" class="txt" placeholder="Ingrese contraseña"><br><br>
-                <a href=""><button class="icon-ingresar"><i class="fas fa-sign-in-alt"></i></button></a><br>
+                <a href=""><button class="icon-ingresar" name="ingresar"><i class="fas fa-sign-in-alt"></i></button></a><br>
                 <a href="../php/crear_cuenta.php" class="crear txt">Crear cuenta</a>
 
                 </form>       
-          <?php
+        </div>
+        <?php
              include("validacion_login.php");
             ?>
-    
-        </div>
     </div>
 </div>
+</div>
+
+</html>
