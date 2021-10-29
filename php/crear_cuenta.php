@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../Sitio web AybriMakeUp/css/estilos.css">
     <script src="https://kit.fontawesome.com/1d1992211d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
         rel="stylesheet">
@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Patua+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/normalizacion.css">
-    <link rel="stylesheet" href="css/stilos.css">
+    <link rel="stylesheet" type="text/css " href="../Sitio web AybriMakeUp/css/normalizacion.css">
+
     <title>Aybri Make Up</title>
 </head>
 <header>
