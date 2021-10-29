@@ -1,22 +1,11 @@
-
 <?php 
+$usuario=$_POST['usuario'];
+$contraseña=$_POST['contraseña'];
 session_start();
-include("conexion_db.php");
+$_SESSION['usuario'] = $usuario;
 
-if(!empty($_POST['usuario'] && !empty($_POST['contraseña']))) {
-    $records = $conex->prepare("SELECT pers_usuario,pers_contraseña FROM persona WHERE pers_usuario =:usuario ");
-    $records->bindParam(':usuario',$_POST['usuario']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
+include('conexion_db.php');
+$consulta="SELECT*FROM persona WHERE pers_usuario= '$usuario' and pers_contraseña = '$contraseña'";
+$resultado=mysqli_query($conex,$consulta);
 
-    $message =  '';
-    if(count($results)> 0 && contraseña_verify($_POST['contraseña'],$results['pers_contraseña'])){
-          $_SESSION['usuario'] = $results['pers_usuario'];
-          header('locationn: ../Sitio web AybriMakeUp/index.html');
-
-    }else{
-        $message = 'no coinciden las credenciales';
-    }
-
-}
 ?>

@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -63,8 +64,8 @@
                 <input type="password" name="contraseña" id="contraseña" class="txt" placeholder="Ingrese contraseña"><br><br>
                 <a href=""><button class="icon-ingresar"><i class="fas fa-sign-in-alt"></i></button></a><br>
                 <a href="../php/crear_cuenta.php" class="crear txt">Crear cuenta</a>
-</form>       
 
+                </form>       
           <?php
              include("validacion_login.php");
             ?>
