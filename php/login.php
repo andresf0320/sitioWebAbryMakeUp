@@ -1,26 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -77,13 +55,20 @@
         <div class="barra-cerrar">
             <button id="close" class="closes" onclick="cerrar()"></button>
         </div>
+        <form method="post">
             <h4 class="conct">Iniciar Sesión</h4>
                 <label for="usuario" class="txt"><strong>Usuario: </strong></label>
                 <input type="text" name="usuario" id="usuario" class="txt" placeholder="Ingrese usuario"><br><br>
                 <label for="contraseña" class="txt"><strong> Contraseña: </strong></label>
                 <input type="password" name="contraseña" id="contraseña" class="txt" placeholder="Ingrese contraseña"><br><br>
                 <a href=""><button class="icon-ingresar"><i class="fas fa-sign-in-alt"></i></button></a><br>
-                <a href="../Sitio web AybriMakeUp/php/crear_cuenta.php" class="crear txt">Crear cuenta</a>
+                <a href="../php/crear_cuenta.php" class="crear txt">Crear cuenta</a>
+</form>       
+
+          <?php
+             include("validacion_login.php");
+            ?>
+    
         </div>
     </div>
 </div>
