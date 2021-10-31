@@ -81,6 +81,10 @@
             <label for="contraseña-new" class="txt"><strong> Contraseña: </strong></label>
             <input type="password" name="contraseña-new" id="contraseña-new" class="txt"
                 placeholder="Ingrese contraseña"><br><br>
+            
+            <label for="contraseña-new" class="txt"><strong>Confirmar Contraseña: </strong></label>
+            <input type="password" name="c_contraseña-new" id="contraseña-new" class="txt"
+            placeholder="Ingrese contraseña"><br><br>
                             
             <input type="checkbox" id="cbox2" value="checkbox"> <label for="cbox2" class="txt">Estoy de acuerdo con los
                 <a href="" class="crear">Terminos y condiciones</a></label></div>
@@ -94,7 +98,7 @@
             </section><br>
             </form>
             <?php
-             include("registrar.php");
+             include("register.php");
             ?>
     
 

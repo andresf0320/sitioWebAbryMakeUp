@@ -1,3 +1,39 @@
+<?php
+include "conexion_db.php";
+error_reporting(0);
+session_start();
+
+
+
+if(isset($_SESSION["usuario"])){
+    header("Location: panel.php");
+}
+
+if(isset($_POST["ingresar"])){
+    $usuario=$_POST["usuario"];
+    $contraseña=md5($_POST["contraseña"]);
+
+    $consulta = "SELECT * FROM persona WHERE pers_usuario ='$usuario' AND pers_contraseña ='$contraseña'";
+    $resultado = mysqli_query($conex,$consulta);
+
+    if($resultado->num_rows >0){
+        $row = mysqli_fetch_assoc($resultado);
+        $_SESSION['usuario'] = $row['usuario'];
+        header("Location: panel.php");
+
+    }else{
+        echo"<script>alert('La contraseña o el email son incorrectos')</script>";
+
+    }
+
+
+}
+
+
+
+
+?>
+
 
 
 <!DOCTYPE html>
