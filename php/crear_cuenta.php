@@ -90,13 +90,13 @@
                 <a href="" class="crear">Terminos y condiciones</a></label></div>
             <hr class="separador">
             <section class="row">
-                <div class="col-sm"><a href="index.html"><button class="icon-atras"><i
-                                class="fas fa-arrow-circle-left"></i></button></a> </div>
                 <div class="col-sm"><a href=""><button class="icon-registrar" name="register" onclick="Registrar()"><strong>Crear cuenta</strong></button></a>
                 </div>
                 <div class="col-sm"></div>
             </section><br>
+            
             </form>
+            <div class="col-sm"><a href="../php/login.php"><button class="icon-atras"><i class="fas fa-arrow-circle-left"></i></button></a> </div>
             <?php
              include("register.php");
             ?>

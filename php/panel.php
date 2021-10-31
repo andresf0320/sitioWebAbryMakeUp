@@ -3,7 +3,7 @@
 session_start();
 
 if(!isset($_SESSION['usuario'])){
-    header("Location:../Sitio web AybriMakeUp/php/index.html");
+    header("Location:../index.html");
 }
 
 ?>

@@ -10,6 +10,7 @@ if(isset($_SESSION["usuario"])){
 }
 
 if(isset($_POST["ingresar"])){
+    if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña'])){
     $usuario=$_POST["usuario"];
     $contraseña=md5($_POST["contraseña"]);
 
@@ -19,17 +20,17 @@ if(isset($_POST["ingresar"])){
     if($resultado->num_rows >0){
         $row = mysqli_fetch_assoc($resultado);
         $_SESSION['usuario'] = $row['usuario'];
-        header("Location: panel.php");
+        header("Location: ../php/panel.php");
 
     }else{
-        echo"<script>alert('La contraseña o el email son incorrectos')</script>";
+        echo"<script>alert('La contraseña o el usuario son incorrectos')</script>";
 
     }
-
+   }else{
+       echo"<script>alert('Por favor complete los campos')</script>"; 
+   }
 
 }
-
-
 
 
 ?>
@@ -78,6 +79,10 @@ if(isset($_POST["ingresar"])){
             <a class="tex" href="../productos.html">PRODUCTOS</a> |
             <a class="tex" href="../contactenos.html">CONTÁCTENOS</a> |
         </div>
+        <div class="derecha">
+          <a href="../php/login.php">  <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" ><i class="fas fa-user-circle"></i></button></a>
+        </div>
+    </nav>
 
         
 </div>
