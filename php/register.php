@@ -59,26 +59,26 @@ if(isset($_POST["register"])){
             
             }else{
                 ?> 
-	    	    <h3 class="bad">¡Hay un error!</h3>
+                <h3 class="bad">¡Hay un error!</h3>
                 <?php
             }
             
             
-        }else{
+            }else{
             ?> 
 	    	<h3 class="bad">¡El correo ya existe!</h3>
            <?php
+            }
+            }else{
+            ?> 
+            <h3 class="bad">¡Las contraseñas no coinciden!</h3>
+            <?php        
+            }
+            }else{
+            ?> 
+            <h3 class="bad">¡Por favor complete los campos!</h3>
+            <?php        
         }
-    }else{
-        ?> 
-        <h3 class="bad">¡Las contraseñas no coinciden!</h3>
-       <?php        
-    }
- }else{
-    ?> 
-    <h3 class="bad">¡Por favor complete los campos!</h3>
-    <?php        
-    }
 }
 
 

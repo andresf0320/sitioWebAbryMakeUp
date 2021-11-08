@@ -45,30 +45,40 @@
                 <div class="col-sm "><br>
                     <label for="nombre" class="txt"><strong>Nombre: </strong></label>
                     <input type="text" name="nombre" id="nombre" class="txt" placeholder="Ingrese nombre"> <br><br>
-                    <label for="identificacion" class="txt"><strong>Identificación: </strong></label>
-                    <input type="text" name="identificacion" id="identificacion" class="txt" placeholder="Ingrese identificación">
-                    <br><br>
-                    <label for="ciudad" class="txt"><strong>Ciudad: </strong></label>
-                    <input type="text" name="ciudad" id="ciudad" class="txt" placeholder="Ingrese ciudad"><br><br>
-                    <label for="correo" class="txt"><strong>Correo: </strong></label>
-                    <input type="text" name="correo" id="correo" class="txt" placeholder="Ingrese correo"><br><br>
-
-                </div>
-                <div class="col-sm izq"><br>
+                    
                     <label for="apellido1" class="txt"><strong>Primer apellido: </strong></label>
                     <input type="text" name="apellido1" id="apellido1" class="txt"
                         placeholder="Ingrese primer apellido"><br><br>
-                    <label for="cel" class="txt"><strong>Celular: </strong></label>
-                    <input type="text" name="cel" id="cel" class="txt" placeholder="Ingrese número de celular"><br><br>
-                    <label for="dirección" class="txt"><strong>Dirección: </strong></label>
-                    <input type="text" name="dirección" id="dirección" class="txt"
-                        placeholder="Ingrese dirección"><br><br>
-                </div>
-                <div class="col-sm izq"><br>
-                    <label for="apellido2" class="txt"><strong>Segundo apellido: </strong></label>
+                    
+                        <label for="apellido2" class="txt"><strong>Segundo apellido: </strong></label>
                     <input type="text" name="apellido2" id="apellido2" class="txt"
                         placeholder="Ingrese segundo apellido"><br><br>
                
+    
+
+                </div>
+                <div class="col-sm izq"><br>
+                    <label for="identificacion" class="txt"><strong>Identificación: </strong></label>
+                    <input type="text" name="identificacion" id="identificacion" class="txt" placeholder="Ingrese identificación">
+                    <br><br>
+                    
+                    <label for="cel" class="txt"><strong>Celular: </strong></label>
+                    <input type="text" name="cel" id="cel" class="txt" placeholder="Ingrese número de celular"><br><br>
+                    
+                    <label for="correo" class="txt"><strong>Correo: </strong></label>
+                    <input type="text" name="correo" id="correo" class="txt" placeholder="Ingrese correo"><br><br>
+
+                   
+                </div>
+                <div class="col-sm izq"><br>
+
+                    <label for="ciudad" class="txt"><strong>Ciudad: </strong></label>
+                    <input type="text" name="ciudad" id="ciudad" class="txt" placeholder="Ingrese ciudad"><br><br> 
+                    
+                    <label for="dirección" class="txt"><strong>Dirección: </strong></label>
+                    <input type="text" name="dirección" id="dirección" class="txt"
+                        placeholder="Ingrese dirección"><br><br>
+                    
                     <label for="barrio" class="txt"><strong>Barrio: </strong></label>
                     <input type="text" name="barrio" id="barrio" class="txt" placeholder="Ingrese barrio">
                 </div>
