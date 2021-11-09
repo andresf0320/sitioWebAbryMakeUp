@@ -3,7 +3,7 @@
 session_start();
 
 if(!isset($_SESSION['usuario'])){
-    header("Location:../index.html");
+    header("Location:../php-vistas/index.php");
 }
 
 ?>
