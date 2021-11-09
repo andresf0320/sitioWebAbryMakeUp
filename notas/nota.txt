@@ -1,7 +1,0 @@
-puscuando se haga un cambio:
-open: git bash
-escribir: git status 
-seguido: git add . para agregar los cambios 
-y: git push -u origin main para subirlo a nuestro main 
-xx
- 
