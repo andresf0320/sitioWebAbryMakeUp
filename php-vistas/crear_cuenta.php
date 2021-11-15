@@ -108,7 +108,7 @@
             </form>
             <div class="col-sm"><a href="../php/login.php"><button class="icon-atras"><i class="fas fa-arrow-circle-left"></i></button></a> </div>
             <?php
-             include("register.php");
+             include("../php/register.php");
             ?>
     
 
