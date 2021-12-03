@@ -367,4 +367,45 @@ font-family: 'Cookie', cursive;
   .item-details > .item-price {
     margin: 0;
   }
+
+    /* ? CARRITO */
+    
+    .shopping-cart-items {
+        padding: 20px 0px;
+      }
+      
+      .shopping-cart-header {
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .shopping-cart-image {
+        max-width: 80px;
+        border-radius: 20px;
+      }
+      
+      .shopping-cart-quantity-input {
+        max-width: 45px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #eee;
+        padding: 5px;
+      }
+      
+      .shopping-cart-total {
+        min-height: 96px;
+      }
+      
+      .shopping-cart.text-center{
+        font-family: 'Patua One', cursive;
+        font-size: 100%;
+    
+      }
+    
+      /* ? CREAR CUENTA ESTILO  */
+    
+      .icon-registrar{
+          border-radius: 50px;
+          font-family: 'Times New Roman', Times, serif;
+    
+      }
   

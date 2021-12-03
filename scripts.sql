@@ -18,3 +18,20 @@ CREATE TABLE  `db_usuarios`.`persona` (
   `pers_contraseña` VARCHAR(40) NOT NULL,
    PRIMARY KEY (`pers_id`)) ENGINE = InnoDB;
   
+
+  CREATE TABLE  .`producto` (
+  `product_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `nombre_product` VARCHAR(255) NOT NULL,
+  `descripcion` VARCHAR(2000) NOT NULL,
+  `precio` DECIMAL(9,2) NOT NULL,
+  
+  
+   PRIMARY KEY (`product_id`)) ENGINE = InnoDB;
+
+
+   CREATE TABLE  .`carrito_usuario` (
+  `id_Sesion` VARCHAR(255) NOT NULL,
+  `id_producto` INT(11) NOT NULL AUTO_INCREMENT,
+  FOREIGN KEY(id_producto) REFERENCES producto(product_id)
+  ON UPDATE CASCADE ON DELETE CASCADE)
+
