@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css" type ="text/css">
-    <link rel="stylesheet" href="../css/estilo_carrito.css" type ="text/css">
+    <link rel="stylesheet" href="../css/estilos_admin.css" type ="text/css">
     <script src="https://kit.fontawesome.com/1d1992211d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
         rel="stylesheet">
@@ -35,19 +35,24 @@
 <div class="navegador">
     <nav class="principal">
         <div class="menu">
-            | <a class="tex" href="../php-vistas/index.php">INICIO</a> |
-            <a class="tex" href="../php-vistas/conocenos.php">CONÓCENOS</a> |
-            <a class="tex" href="../php-vistas/productos.php">PRODUCTOS</a> |
-            <a class="tex" href="../php-vistas/contactenos.php">CONTÁCTENOS</a> |
+            | <a class="tex" href="index-admin.html">INICIO</a> |
+            <a class="tex" href="conocenos-admin.html">CONÓCENOS</a> |
+            <a class="tex" href="productos-admin.html">PRODUCTOS</a> |
+            <a class="tex" href="administrarproductos.html">ADMINISTRAR PRODUCTOS</a> |
+            <a class="tex" href="contactenos-admin.html">CONTÁCTENOS</a> |
         </div>
 
         <div class="derecha">
-        <a href="../php/salir.php">  <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-         <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-         <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-         </svg></button></a>
-        <a href="../php/salir.php">  <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" ><i class="fas fa-user-circle"></i></button></a>
-      </div>
+            <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" ><i class="fas fa-user-circle"></i></button></a>
+            
+            <button class="icon btn-usuario"onclick="document.getElementById('modal').style.display='block'" > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ad" viewBox="0 0 16 16">
+            <path d="m3.7 11 .47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11h1.2zm1.503-4.852.734 2.426H4.416l.734-2.426h.053zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.
+            695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 
+            .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z"/>
+            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+           </svg>
+            
+          </div>
       </nav>
   </div>
   
@@ -141,87 +146,7 @@
             </div>
         </section> <br>
     </div>
-        <!-- CARRITO DE COMPRAS-->
-        <section class="shopping-cart">
-        <div class="container">
-            <h1 class="text-center conct">Carrito de compras</h1>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <div class="shopping-cart-header">
-                        <h6 class="text2">Producto</h6>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="shopping-cart-header">
-                        <h6 class="text-truncate text2">Precio</h6>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="shopping-cart-header">
-                        <h6 class="text2">Cantidad</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ? PRODUCTOS DEL CARRITO  -->
-            <div class="shopping-cart-items shoppingCartItemsContainer">
-            </div>
-
-            <!--  TOTAL -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0 text2">Total : </p>
-                        <p class="ml-4 mb-0 shoppingCartTotal"> 0 $</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div><br>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MODAL COMPRA BOSTRAP-->
-            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text2" id="comprarModalLabel">Detalles de compra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <p class="txt">Opciones de pago:</p>
-                            <ul>
-                                <li class="txt"><strong>Nequi o Daviplata:</strong> 3229333001</li>
-                                <li class="txt"><strong>Efecty</strong></li>
-                                <li class="txt"><strong>Bancolombia</strong></li>
-                            </ul>
-                            <hr>
-                            <p class="txt"><a href="contactenos.php" class="crear" align="center">Solicitar información necesaria con los asesores</a>, y una vez realizado el pago, enviar comprobante para realizar envio de su pedido.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+    
     <!-- FLOOTER-->
     <flooter>
         <div class="flooter">
@@ -252,18 +177,7 @@
             </section>
         </div>
     </flooter>
-    <script src="../js/carrito.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
     
 </body>
 
-</html>
 </html>

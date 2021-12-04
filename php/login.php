@@ -10,6 +10,7 @@ if(isset($_SESSION["usuario"])){
 }
 
 if(isset($_POST["ingresar"])){
+     
     if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contraseña'])){
     $usuario=$_POST["usuario"];
     $contraseña=md5($_POST["contraseña"]);
@@ -30,7 +31,8 @@ if(isset($_POST["ingresar"])){
        echo"<script>alert('Por favor complete los campos')</script>"; 
    }
 
-}
+     }  
+ 
 
 
 ?>
